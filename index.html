@@ -1,77 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historical Places in India</title>
     <style>
+        header {
+            background-color: rgb(216, 156, 59);
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+            font-size: larger;
+
+        }
+
+        img {
+            height: 200px;
+            width: 300px;
+            margin: 7px;
+            padding: 7px;
+        }
+
+        .img {
+            position: relative;
+            height: 300px;
+            width: 350px;
+            margin: 20px;
+            padding: 0px;
+            box-shadow: 10px 10px 15px rgb(14, 13, 13);
+            align-items: center;
+            border-radius: 20px;
+        }
+
         
-        header{
-            background-color: bisque;
+
+        .img:hover{
+            height: 315px;
+            width: 370px;
+            transition: 0.3s;
+        }
+
+        .img h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 3fr);
+            grid-template-rows: auto;
+            text-align: center;
+
+
+        }
+
+        img {
+            border-radius: 20px;
+        }
+
+        footer {
+            background-color: black;
             margin: auto;
             padding: auto;
             text-align: center;
+            color: rgb(190, 186, 186);
+            height: 20dvh;
+            width: 100%;
         }
 
-        img{
-            height: 200px;
-            width: 300px;
-            margin: 0px;
-            padding: 0px;
+        .container> :nth-child(8) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .container{
-            display: grid;
-            grid-template-columns: repeat(3,3fr);
-            grid-template-rows: auto;
-            text-align: center;
-         
-          
+        .container a {
+            text-decoration: none;
+            align-items: center;
         }
-        
+
+        .container a:hover {
+            font-size: 20px;
+        }
+
+        .nav {
+            text-decoration: none;
+            background-color: black;
+            padding: 15px;
+            text-align: left;
+            margin: 10px 0px;
+            margin-bottom: 35px;
+
+        }
+
+        .nav>* {
+            text-decoration: none;
+            color: white;
+            margin: 15px;
+            padding: 15px;
+        }
+
+        .nav>*:hover {
+            font-size: 20px;
+            transition: 0.5s;
+        }
+
+        body {
+            background: linear-gradient(190deg, rgb(242, 241, 240), rgb(196, 192, 182), rgb(210, 200, 159), rgb(216, 201, 139));
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
     </style>
 </head>
+
 <body>
     <header>
         <div class="title">
             <H1>The Historical Places in India </H1>
         </div>
     </header>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="https://whc.unesco.org/en/statesparties/in">See More</a>
+    </nav>
     <main>
         <div class="container">
-        <div class="img">
-            <img src="https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSdnzdx6OIoMeSwZdr6SqSELRBT_-_7WIXGuaWkHEZl3Y3Tguz9a-ebc8CG2-vwzUk4" >
-            <h2>Taj Mahal</h2>
+            <div class="img">
+
+                <img
+                    src="https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSdnzdx6OIoMeSwZdr6SqSELRBT_-_7WIXGuaWkHEZl3Y3Tguz9a-ebc8CG2-vwzUk4">
+                <h2>Taj Mahal</h2>
+            </div>
+            <div class="img">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Delhi_fort.jpg" alt="">
+                <h2>Red Fort</h2>
+            </div>
+            <div class="img">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Qutub_minar_05.JPG" alt="">
+                <h2>Qutub Minar</h2>
+            </div>
+            <div class="img">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Hawa_Mahal_east_facade_%2814-07-2022%29.jpg"
+                    alt="">
+                <h2>Hawa Mahal</h2>
+            </div>
+            <div class="img">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Ajanta_%2863%29.jpg/1200px-Ajanta_%2863%29.jpg"
+                    alt="">
+                <h2>Ajanta Caves</h2>
+            </div>
+            <div class="img">
+                <img src="https://static.langimg.com/photo/imgsize-94826,msid-85561360/navbharat-times.jpg" alt="">
+                <h2>Hampi</h2>
+            </div>
+            <div class="img">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Sanchi_Stupa_from_Eastern_gate%2C_Madhya_Pradesh.jpg"
+                    alt="">
+                <h2>Sanchi Stupa</h2>
+            </div>
+            <div class="img ">
+                <a href="https://en.wikipedia.org/wiki/Monuments_of_National_Importance_(India)">SEE MORE</a>
+            </div>
         </div>
-        <div class="img">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Delhi_fort.jpg" alt="">
-            <h2>Red Fort</h2>
-        </div>
-        <div class="img">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Qutub_minar_05.JPG" alt="">
-            <h2>Qutub Minar</h2>
-        </div>
-        <div class="img">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Hawa_Mahal_east_facade_%2814-07-2022%29.jpg" alt="">
-            <h2>Hawa Mahal</h2>
-        </div>
-        <div class="img">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Ajanta_%2863%29.jpg/1200px-Ajanta_%2863%29.jpg" alt="">
-            <h2>Ajanta Caves</h2>
-        </div>
-        <div class="img">
-            <img src="https://static.langimg.com/photo/imgsize-94826,msid-85561360/navbharat-times.jpg" alt="">
-            <h2>Hampi</h2>
-        </div>
-        <div class="img">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Sanchi_Stupa_from_Eastern_gate%2C_Madhya_Pradesh.jpg" alt="">
-            <h2>Sanchi Stupa</h2>
-        </div>
-    </div>
 
     </main>
     <footer>
         <p>This content is taken from web </p>
     </footer>
 </body>
+
 </html>
